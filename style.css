@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, a {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+h1 {
+    color: #fff;
+    font-size: 41px;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 3em;
+    background-color: blueviolet;
+}
+
+.cards {
+    width: 18em;
+    height: 31em;
+    padding: 2.5em;
+    background-color: blue;
+    
+}
+
+.cards:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-top: 2.5em;
+}
+
+.cards:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+    padding-top: 2.5em;
+}
+
+.cards:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-top: 2.5em;
+}
+
+.cards svg {
+    margin-bottom: 1.8em;
+}
+
+.cards h1 {
+    margin-bottom: 0.8em;
+}
+
+.cards p {
+    word-spacing: 0.2em;
+    text-align: justify;
+
+}
+
+button {
+    width: 10em;
+    height: 2.8em;
+    border: none;
+    border-radius: 19px;
+
+}
+
+button a {
+    text-decoration: none;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+
+@media screen and (max-weight: 425px) {
+
+}
+
