@@ -6,11 +6,8 @@
     box-sizing: border-box;
 }
 
-h1, a {
-    font-family: 'Big Shoulders Display', cursive;
-}
-
 h1 {
+    font-family: 'Big Shoulders Display', cursive;
     color: #fff;
     font-size: 41px;
     font-weight: 700;
@@ -34,9 +31,12 @@ main {
 }
 
 .cards {
-    width: 18em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 19em;
     height: 31em;
-    padding: 2.5em;
+    padding: 1.8em 3em;
     background-color: blue;
     
 }
@@ -45,50 +45,66 @@ main {
     background-color: hsl(31, 77%, 52%);
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    padding-top: 2.5em;
 }
 
 .cards:nth-child(2) {
     background-color: hsl(184, 100%, 22%);
-    padding-top: 2.5em;
 }
 
 .cards:nth-child(3) {
     background-color: hsl(179, 100%, 13%);
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    padding-top: 2.5em;
 }
 
 .cards svg {
-    margin-bottom: 1.8em;
+    margin:  0.5em 0 2.2em 0;
+
 }
 
 .cards h1 {
-    margin-bottom: 0.8em;
+    margin:  0 0 0.7em 0;
 }
 
 .cards p {
     word-spacing: 0.2em;
-    text-align: justify;
+    text-align:left;
+    line-height: 1.6em;
+    margin:  0 0 2em 0;
 
 }
 
 button {
-    width: 10em;
-    height: 2.8em;
+    width: 11em;
+    height: 3.5em;
     border: none;
-    border-radius: 19px;
-
+    border-radius: 25px;
+    margin:  2.2em 0 2em 0;
 }
 
 button a {
     text-decoration: none;
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#btn_sedans a{
+    color: hsl(31, 77%, 52%) ;
+}
+
+#btn_suv a{
+    color: hsl(184, 100%, 22%) ;
+
+}
+
+#btn_luxe a{
+    color: hsl(179, 100%, 13%);
 }
 
 
 @media screen and (max-weight: 425px) {
+    
 
 }
 
