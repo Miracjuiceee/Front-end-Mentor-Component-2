@@ -27,7 +27,7 @@ main {
     width: 100vw;
     height: 100vh;
     padding: 3em;
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
 }
 
 .cards {
@@ -35,8 +35,8 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     width: 19em;
-    height: 31em;
-    padding: 1.8em 3em;
+    height: 30.5em;
+    padding: 1.8em 3em 0em 3em;
     background-color: blue;
     
 }
@@ -77,9 +77,10 @@ main {
 button {
     width: 11em;
     height: 3.5em;
+    min-height: 3em;
     border: none;
     border-radius: 25px;
-    margin:  2.2em 0 2em 0;
+    margin:  4em 0 0em 0;
 }
 
 button a {
@@ -103,8 +104,43 @@ button a {
 }
 
 
-@media screen and (max-weight: 425px) {
+@media (max-width: 768px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
     
+    .cards {
+        width: 90vw;
+        max-width: 400px;
+        height: 500px;
+        min-height: 500px;
+        padding: 2em 2.5em;
+    }
+
+    .cards:nth-child(1) {
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .cards:nth-child(2) {
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    .cards:nth-child(3) {
+        background-color: hsl(179, 100%, 13%);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 0px;
+    }
+
+    .cards p {
+        margin-right: 3em ;
+    }
 
 }
 
