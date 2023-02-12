@@ -117,7 +117,7 @@ button a {
         max-width: 400px;
         height: 500px;
         min-height: 500px;
-        padding: 2em 2.5em;
+        padding: 2em 2em;
     }
 
     .cards:nth-child(1) {
@@ -139,7 +139,11 @@ button a {
     }
 
     .cards p {
-        margin-right: 3em ;
+        margin-right: 2em ;
+    }
+
+    button {
+        margin-top: 2em
     }
 
 }
